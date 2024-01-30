@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="actividad4.html">
+        <h2>Buscar Cámaras de Fotos</h2>
+        <label for="marca">Marca:</label>
+        <input type="text" id="marca" name="marca">
+        
+        <br><br>
+
+        <label for="modelo">Modelo:</label>
+        <input type="text" id="modelo" name="modelo">
+
+        <br><br>
+
+        <label for="megapixeles">Megapíxeles:</label>
+        <input type="number" id="megapixeles" name="megapixeles" min="1">
+
+        <br><br>
+
+      <label for="gamma">Gamma</label>
+      <select name="gamma" id="gamma">
+        <option value="" disabled selected>Tipo</option>
+        <option value="1">Baja</option>
+        <option value="2">Media</option>
+        <option value="3">Alta</option>
+      </select>
+
+        <br><br>
+
+        <label for="color">Color:</label>
+        <select name="color" id="color">
+            <option value="1">Negro</option>
+            <option value="2">Blanco</option>
+        </select>
+
+        <br><br>
+
+        <button type="submit">Buscar</button>
+        
+
+</body>
+</html>
