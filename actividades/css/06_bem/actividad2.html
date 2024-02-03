@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        .comentario {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="comentarios">
+        <h2>Comentarios</h2>
+
+        <div class="comentario">
+            <p class="nombre">Usuario anonimo </p>
+            <p class="fecha">2 de febrero de 2024</p>
+            <p class="mensaje">Hola</p>
+        </div>
+
+        <div class="comentario">
+            <p class="nombre">Usuario anonimo</p>
+            <p class="fecha">3 de febrero de 2024</p>
+            <p class="mensaje">Me encanta este contenido. Gracias por compartir.</p>
+        </div>
+
+        <h3>Añadir un comentario</h3>
+        <form id="formulario-comentario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="mensaje">Comentario:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="submit">Publicar comentario</button>
+        </form>
+    </div>
+
+</body>
+</html>
