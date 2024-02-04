@@ -1,80 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Simple Blog</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      color: #333;
-    }
-    #simplestblog {
-      width: 700px;
-      margin: 0 auto;
-      background-color: #f4f4f4;
-      padding: 20px;
-    }
-    .profile {
-      text-align: center;
-      padding: 20px 0;
-      font-size: 1.5em;
-    }
-    .aboutme {
-      text-align: center;
-      padding: 20px 0;
-      font-style: italic;
-    }
-    .writing {
-      text-align: center;
-      padding: 20px 0;
-      font-size: 1.3em;
-    }
-    .posts {
-      padding: 20px 0;
-    }
-    .post {
-      margin-bottom: 20px;
-      background-color: #fff;
-      padding: 20px;
-      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
-    }
-    .date {
-      text-transform: uppercase;
-      font-weight: bold;
-      font-size: 0.8em;
-      color: #777;
-      padding-bottom: 5px;
-      border-bottom: 1px solid #ddd;
-    }
-    .title a {
-      font-size: 1.3em;
-      color: #333;
-      text-decoration: none;
-    }
-    .excerpt {
-      padding-top: 10px;
-      font-size: 0.9em;
-      line-height: 1.4;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .comentario {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .rojo {
+            color: red;
+            opacity: 0.4;
+            
+        }
+        .rojonegrita {
+            color: red;
+            opacity: 1;
+        }
+        .fernando {
+            background-color: red;
+        }
+        
+        
+    </style>
 </head>
 <body>
-  <div id="simplestblog">
-    <div class="profile">HI, I'M FERNANDO MOREIRA, A FRONTEND ENGINEER.</div>
-    <div class="aboutme">Enthusiast performance, responsive design and usability, always looking for the best project and good coffee. -- about me</div>
-    <div class="writing">Writing..</div>
-    <div class="posts">
-      <div class="post">
-        <div class="date">Dec 10, 2015</div>
-        <div class="title"><a href="">Welcome to Jekyll!</a></div>
-        <div class="excerpt">You'll find this post in your posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve,...</div>
-      </div>
-      <div class="post">
-        <div class="date">Nov 26, 2015</div>
-        <div class="title"><a href="">Lorem ipsum dolor sit</a></div>
-        <div class="excerpt">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam,feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper....</div>
-      </div>
-      <div class="post">
-        <div class="date">Nov 12, 2015</div>
-        <div class="title"><a href="">Lorem ipsum dolor sit amet</a></div>
-        <div class="excerpt">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feug
+   <h2><span class="rojo">SIMPLEST</span> <span class="rojonegrita">BLOG</span> </h2>
+
+   <p>Hi, I'm <span class="fernando">Fernando Moreira</span>, a Frontend Engineer. <br>
+Enthusiast performance, responsive design and usability, always looking for <br>
+the best project and good coffee. -- <span class="rojo">about me</span>
+</p>
+   <div class="comentario"><h2>Writing..</h2>
+    <i class="gris">Dec 10, 2015</i> -- <span class="rojo"><u>Welcome to Jekyll!</u></span> -- You'll find this post in your _post directory. Go ahead and <br>
+    edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but <br>
+    the most common way is to run Jekyll serve,... <span class="rojo"><u>Read more</u></span>
+</div>
+<div class="comentario">
+    <i class="gris">Nov 26, 2015</i> -- <span class="rojo"><u>Lorem ipsum dolor sit</u></span> -- Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <br>
+    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. <br>
+    Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet <br>
+    quam  egestas semper.... <span class="rojo"><u>Read more</u></span>
+</div>
+<div class="comentario">
+<i class="gris">Nov 12, 2015</i> -- <span class="rojo"><u>Lorem ipsum dolor sit amet</u></span> -- Pellentesque habitant morbi tristique senectus et <br>
+netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, <br>
+tempor sit amet, ante. Donec eu librero sit amet quam egestas semper. Aenean ultricies mi vitae est. <br>
+Mauris placerat eleifend... <span class="rojo"><u>Read more</u></span>
+</div>
+<div class="comentario">
+    <i class="gris">Nov 12, 2015</i> -- <span class="rojo"><u>The quick, brown fox jumps over a lazy dog</u></span> -- The quick, brown fox jumps over a <br>
+    lazy dog. Djs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick <br>
+    quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab... <span class="rojo"><u>Read more</u></span>
+</div>
+<br><br><br><br><br>
+<i class="gris">2016 All rights reserved. Made with <span class="rojo">Jekyll</span> and <span>&hearts;</span></i> 
+   
+
+</body>
+</html>
