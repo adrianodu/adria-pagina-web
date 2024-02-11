@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#cookie-banner-toggle {
+  display: none;
+}
+
+#cookie-banner {
+  position: fixed;
+  bottom: -200px; 
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  transition: bottom 0.5s ease; 
+  animation: showBanner 0.5s ease-out 5s forwards; 
+}
+
+@keyframes showBanner {
+  from {
+    bottom: -200px;
+  }
+  to {
+    bottom: 0; 
+  }
+}
+
+#cookie-label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#accept-cookie {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.main-content {
+  padding: 20px;
+  height: 2000px; 
+}
+
+  </style>
+</head>
+<body>
+  <input type="checkbox" id="cookie-banner-toggle">
+  <div id="cookie-banner">
+    <label for="cookie-banner-toggle" id="cookie-label">Este sitio web utiliza cookies para garantizar que obtengas la mejor experiencia en nuestro sitio web.</label>
+    <button id="accept-cookie">Aceptar</button>
+  </div>
+
+  <div class="main-content">
+    hola buenas
+  </div>
+</body>
+</html>

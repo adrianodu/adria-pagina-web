@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+   
+   body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.reloj {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 10px solid #333;
+  border-radius: 50%;
+}
+
+.hora, .minuto, .segundo {
+  position: absolute;
+  width: 2px;
+  background-color: black;
+  transform-origin: center bottom;
+}
+
+.hora {
+  height: 40px;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(30deg);
+  background-color: #FF5733; 
+  animation: moveHour 30s linear infinite; 
+}
+
+.minuto {
+  height: 60px;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  background-color: #33FF57; 
+  animation: moveMinute 30s linear infinite; 
+}
+
+.segundo {
+  height: 80px;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(180deg);
+  background-color: #5733FF; 
+  animation: moveSecond 30s linear infinite; 
+}
+
+@keyframes moveHour {
+  from {
+    transform: translate(-50%, -50%) rotate(30deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(390deg); 
+  }
+}
+
+@keyframes moveMinute {
+  from {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(3960deg); 
+  }
+}
+
+@keyframes moveSecond {
+  from {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(4320deg); 
+  }
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="reloj">
+    <div class="hora"></div>
+    <div class="minuto"></div>
+    <div class="segundo"></div>
+  </div>
+</body>
+</html>
+
