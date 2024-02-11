@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hover en 3D</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .container {
+    perspective: 1000px; /* Define la perspectiva para el efecto 3D */
+  }
+
+  .image {
+    width: 300px;
+    height: 200px;
+    transition: transform 0.5s; /* Transición suave para el cambio de transformación */
+  }
+
+  .image:hover {
+    transform: rotateY(30deg); /* Rotación en el eje Y al pasar el ratón por encima */
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <img class="image" src="fotos/cube-3116778-1280.png" alt="Imagen">
+</div>
+</body>
+</html>

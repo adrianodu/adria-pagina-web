@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+    .contenedor {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sol {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: yellow;
+}
+
+.luna {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateX(-200px); 
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #ddd;
+  animation: eclipse 5s linear infinite;
+}
+
+@keyframes eclipse {
+  0% {
+    transform: translate(-50%, -50%) translateX(-200px); 
+  }
+  50% {
+    transform: translate(-50%, -50%) translateX(0); 
+  }
+  100% {
+    transform: translate(-50%, -50%) translateX(0); 
+  }
+}
+
+</style>
+</head>
+<body>
+  <div class="contenedor">
+    <div class="sol"></div>
+    <div class="luna"></div>
+  </div>
+</body>
+</html>
