@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lightsteelblue; 
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.column {
+    flex: 1;
+    margin: 0 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.column h2 {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+
+ul li::before {
+    content: "\2022"; 
+    color: #333; 
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    position: absolute;
+    left: 0;
+    top: 50%; 
+    transform: translateY(-50%); 
+}
+
+ul li:hover {
+    background-color: #f9f9f9;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .column {
+        margin: 10px 0;
+    }
+}
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="actividades/curriculum.html">Curriculum</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="column">
+            <h2>HTML</h2>
+            <ul class="list">
+                <h3>Formato</h3>
+                <li><a href="actividades/html/02_formato/actividad1.html">Actividad 1</a></li>
+                <li><a href="actividades/html/02_formato/actividad2.html">Actividad 2</a></li>
+                <li><a href="actividades/html/02_formato/actividad3.html">Actividad 3</a></li>
+                <li><a href="actividades/html/02_formato/actividad4.html">Actividad 4</a></li>
+                <li><a href="actividades/html/02_formato/actividad5.html">Actividad 5</a></li>
+                <li><a href="actividades/html/02_formato/actividad6.html">Actividad 6</a></li>
+                <li><a href="actividades/html/02_formato/actividad7.html">Actividad 7</a></li>
+            </ul>
+            <ul class="list">
+                <h3>Hipervinculos</h3>
+                <li><a href="actividades/html/03_hipervinculos/actividad1.html">Actividad 1</a></li>
+                <li><a href="actividades/html/03_hipervinculos/actividad2.html">Actividad 2</a></li>
+                <li><a href="actividades/html/03_hipervinculos/actividad3.html">Actividad 3</a></li>
+            </ul>
+        </div>
+        <div class="column">
+            <h2>CSS</h2>
+            <ul class="list">
+                <li>Elemento 9</li>
+                <li>Elemento 10</li>
+                <li>Elemento 11</li>
+                <li>Elemento 12</li>
+                <li>Elemento 13</li>
+            </ul>
+            <ul class="list">
+                <li>Elemento 14</li>
+                <li>Elemento 15</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
