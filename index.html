@@ -1,104 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-<style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ff;
+  font-size: 21px;
+  line-height: 1.6;
+  overflow-y: hidden;
+}
+
+header {
+  background-color: #f0f8ff;
+  color: #333;
+  padding: 40px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
 
 nav ul {
-    list-style-type: none;
-    text-align: center;
-}
-nav ul li {
-    display: inline-block;
-}
-nav ul li a {
-    padding: 10px;
-    display: block;
-    box-sizing: content-box;
-    border: 4px solid black;
-    background-color: aliceblue;
-    color: black;
-    font-size: 30px;
-    border-radius: 10px;
-}
-
-
-h1 {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-    box-sizing: content-box;
-    border: 4px solid black;
-    background-color: aliceblue;
-    
-}
-
-a {
-    color: red;
-    text-decoration: none;
-    font-size: 20px;
-}
-p {
-    font-size: 25px;
-    font-style: Arial;
-}
-
-.mi-elemento {
-  margin-top: 10px;
-  margin-right: 50px;
-  margin-bottom: 10px;
-  margin-left: 50px;
-  text-align: justify;
-}
-
-.encabezado {
+  list-style-type: none;
+  padding: 0;
   display: flex;
-  justify-content: space-between;
+}
+
+nav ul li {
+  margin: 0 20px; 
+  border-radius: 60px;
+  border: 2px solid lightsteelblue;
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+  padding: 25px 50px;
+}
+
+.intro {
+  background-color: #fff;
+  border-radius: 40px;
+  box-shadow: 0 0 30px lightsteelblue;
+  margin: 20px auto 0 auto;
+  padding: 50px;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 10px;
-  border: 2cap black;
 }
 
-.encabezado img {
-  height: 300px; 
+.container h1 {
+  margin-bottom: 20px;
 }
 
-img{
-    border-radius: 50px;
-    overflow: hidden;
-    border-right-color: black; 
-}
-.cuadre {
-  max-width: 1500px;
-  margin: 0 auto;
-  background-color: #ffffff;
-  padding: 20px;
+.container p {
+  margin-bottom: 20px;
 }
 
-</style>
+.container img {
+  max-width: 25%; 
+  height: auto;
+  margin-top: 20px;
+  border-radius: 20px;
+}
 
 
-    <nav>
-        <ul>
-            <li><a href="actividades.html">Activitats</a></li>
-            <li><a href="actividades/curriculum.html">Curriculum</a></li>
-        </ul>
-    </nav>
+
+  </style>
 </head>
-
-<body style="background-color: lightsteelblue; 
-font-family: 'Arial'">
-<div class="mi-elemento">
-<div class="cuadre">
-    <h1>Portafoli - Adria Novell Duaso</h1>
-    <div class="encabezado">
-    <img src="foto/oscar novell (1).jpg" alt="foto">
-    </div>
-    <p>Me llamo Adria Novell Duaso, tengo 19 años y estoy estudiando un grado medio de informatica en el instituto la caparrella de Lleida. <br>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="actividades.html">Actividades</a></li>
+        <li><a href="actividades/curriculum.html">Curriculum</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="intro">
+    <div class="container">
+      <h1>Portafoli - Adria Novell Duaso</h1>
+      <p>Me llamo Adria Novell Duaso, tengo 19 años y estudio un grado medio de informatica en el instituto la caparrella de Lleida. <br>
         Primero echo la leche y luego los cereales, como haria una persona en sus plenas facultades mentales.</p>
-</div>
-</div>  
+      <img src="../foto/oscar novell (1).jpg" alt="foto">
+    </div>
+  </section>
+  
 </body>
 </html>
