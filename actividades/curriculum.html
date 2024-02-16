@@ -5,14 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-:root {
-    margin-left:  35rem;
+
+img {
+    margin-left: 35rem;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+
+ul li::before {
+    content: "\2022"; 
+    color: #333; 
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    position: absolute;
+    left: 0;
+    top: 50%; 
+    transform: translateY(-50%); 
+}
+
+ul li:hover {
+    background-color: #f9f9f9;
 }
 
     </style>
-    <a href="../index.html">Inicio</a>
+    
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="actividades/curriculum.html">Curriculum</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
     <div>
     <img src="curriculum foto/curriculum_vitae_1_page-0001.jpg" alt="foto curriculum" height="1000" >
     </div>
